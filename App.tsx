@@ -1,10 +1,19 @@
+/* eslint-disable react-native/no-inline-styles */
 import {View, Text, StyleSheet, Button} from 'react-native';
 import React from 'react';
+import {fontFamilies} from './src/constants/fontFamiles';
 
 const App = () => {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Wellcome to my first app</Text>
+      <Text
+        style={{
+          color: '#fafafa',
+          fontSize: 18,
+          fontFamily: fontFamilies.regular,
+        }}>
+        Wellcome to my first app
+      </Text>
       <Text style={styles.title}>Todo List</Text>
       <Button title="Helllo" onPress={() => {}} />
     </View>
@@ -21,7 +30,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   title: {
-    fontWeight: '700',
+    fontFamily: 'Poppins-Bold',
     fontSize: 22,
     color: '#fff',
   },
